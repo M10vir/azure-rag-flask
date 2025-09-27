@@ -19,17 +19,11 @@ A production-ready RAG API that ingests incident documents, retrieves with Azure
 
 ## Architecture (Mermaid)
 <pre><code>```mermaid
-config:
-  layout: dagre
-  look: neo
-  theme: neo-dark
-
 flowchart LR
     A(["Azure Blob Storage - Forensic Docs"]) --> B(["Azure AI Search - Semantic + Vector"])
     B --> C(["Azure OpenAI - GPT + Embeddings"])
     C --> D(["Flask API - /ask endpoint"])
     D --> E(["Azure App Service - Live Hosting"])
-```
 
 ## Services
 - Azure Blob Storage
