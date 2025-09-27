@@ -18,7 +18,7 @@ A production-ready RAG API that ingests incident documents, retrieves with Azure
 - Diagnostic mode: prefix question with `[diag]` to see retrieved snippets.
 
 ## Architecture (Mermaid)
-```mermaid
+<pre><code>```mermaid
 config:
   layout: dagre
   look: neo
@@ -29,7 +29,6 @@ flowchart LR
     B --> C(["Azure OpenAI - GPT + Embeddings"])
     C --> D(["Flask API - /ask endpoint"])
     D --> E(["Azure App Service - Live Hosting"])
-```
 
 ## Services
 - Azure Blob Storage
