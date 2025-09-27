@@ -18,12 +18,12 @@ A production-ready RAG API that ingests incident documents, retrieves with Azure
 - Diagnostic mode: prefix question with `[diag]` to see retrieved snippets.
 
 ## Architecture (Mermaid)
----
+```mermaid
 config:
   layout: dagre
   look: neo
   theme: neo-dark
----
+
 flowchart LR
     A(["Azure Blob Storage - Forensic Docs"]) --> B(["Azure AI Search - Semantic + Vector"])
     B --> C(["Azure OpenAI - GPT + Embeddings"])
