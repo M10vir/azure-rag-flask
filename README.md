@@ -30,6 +30,15 @@ flowchart LR
     C --> D[Azure App Service - Linux]
 ```
 
+## Workbooks
+```mermaid
+flowchart LR
+    A[Data Source Setup & Indexing ] --> B[Connecting Azure OpenAI]
+    B --> C[Local RAG Pipeline]
+    C --> D[Deployment]
+    D --> E[Evaluation-Agent]
+```
+
 ## Quickstart (local)
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
