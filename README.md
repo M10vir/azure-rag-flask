@@ -29,6 +29,7 @@ flowchart LR
     B --> C(["Azure OpenAI - GPT + Embeddings"])
     C --> D(["Flask API - /ask endpoint"])
     D --> E(["Azure App Service - Live Hosting"])
+```
 
 ## Services
 - Azure Blob Storage
