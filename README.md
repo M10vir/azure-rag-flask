@@ -1,4 +1,8 @@
-# Azure RAG – Zero-Day Incident Assistant (Top 3 Winner)
+<p align="center">
+  <img src="assets/AIGeniusSeries-AzureRAGChallenge-1.png" alt="Azure RAG Challenge - Zero Day in Zero Hour" width="800"/>
+</p>
+
+# AI Genius Series / Azure RAG Challenge – Zero Day in Zero Hour
 
 A production-ready RAG API that ingests incident documents, retrieves with Azure AI Search, and generates grounded answers using Azure OpenAI. Deployed on Azure App Service with a public `/ask` endpoint.
 
