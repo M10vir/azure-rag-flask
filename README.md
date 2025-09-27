@@ -24,7 +24,7 @@ A production-ready RAG API that ingests incident documents, retrieves with Azure
 
 ## Services
 ```mermaid
-flowchart LR
+flowchart LR;
     A[Azure Blob Storage] --> B[Azure AI Search\n(docs-index)]
     B --> C[Azure OpenAI\n(gpt-4o-mini, text-embedding-3-large)]
     C --> D[Azure App Service (Linux)]
