@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/AIGeniusSeries-AzureRAGChallenge-1.png" alt="Azure RAG Challenge - Zero Day in Zero Hour" width="800"/>
+  <img src="assets/AIGeniusSeries-AzureRAGChallenge-0.png" alt="Azure RAG Challenge - Zero Day in Zero Hour" width="800"/>
 </p>
 
 # AI Genius Series / Azure RAG Challenge – Zero Day in Zero Hour
@@ -17,13 +17,10 @@ A production-ready RAG API that ingests incident documents, retrieves with Azure
   - Output: JSON `{summary[3], iocs[], mitigations[5], citations[]}`
 - Diagnostic mode: prefix question with `[diag]` to see retrieved snippets.
 
-## Architecture (Mermaid)
-<pre><code>```mermaid
-flowchart LR
-    A(["Azure Blob Storage - Forensic Docs"]) --> B(["Azure AI Search - Semantic + Vector"])
-    B --> C(["Azure OpenAI - GPT + Embeddings"])
-    C --> D(["Flask API - /ask endpoint"])
-    D --> E(["Azure App Service - Live Hosting"])
+## Architecture
+<p align="center">
+  <img src="assets/AIGeniusSeries-AzureRAGChallenge-1.png" alt="Architecture RAG Challenge" width="800"/>
+</p>
 
 ## Services
 - Azure Blob Storage
