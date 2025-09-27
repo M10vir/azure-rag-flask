@@ -17,8 +17,14 @@ A production-ready RAG API that ingests incident documents, retrieves with Azure
   - Output: JSON `{summary[3], iocs[], mitigations[5], citations[]}`
 - Diagnostic mode: prefix question with `[diag]` to see retrieved snippets.
 
-## Architecture
-Azure Blob Storage → Azure AI Search (semantic + vector) → Flask API → Azure OpenAI (GPT-4o-mini, embeddings) → JSON
+## Architecture (Mermaid)
+
+```mermaid
+flowchart LR
+    A[Azure Blob Storage<br/>(Forensic Docs)] --> B[Azure AI Search<br/>(Semantic + Vector)]
+    B --> C[Azure OpenAI<br/>(GPT + Embeddings)]
+    C --> D[Flask API<br/>(/ask endpoint)]
+    D --> E[Azure App Service<br/>(Live Hosting)]
 
 ## Services
 - Azure Blob Storage
