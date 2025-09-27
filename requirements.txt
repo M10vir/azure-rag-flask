@@ -1,0 +1,6 @@
+flask
+requests
+azure-search-documents
+azure-core
+python-dotenv
+gunicorn
