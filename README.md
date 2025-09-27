@@ -25,7 +25,7 @@ flowchart LR
     B --> C[Azure OpenAI<br/>(GPT + Embeddings)]
     C --> D[Flask API<br/>(/ask endpoint)]
     D --> E[Azure App Service<br/>(Live Hosting)]
-
+```
 ## Services
 - Azure Blob Storage
 - Azure AI Search (`docs-index`)
